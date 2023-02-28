@@ -3,8 +3,6 @@ import data from "../data";
 import Card from "./Card"
 import {BiWorld} from 'react-icons/bi'
 
-
-
 export default function App() {
 
   const cards = data.map(card => {
