@@ -17,12 +17,12 @@ export default function App() {
   })
 
   return (
-    <main className="bg-lightWhite font-body">
-      <div className="flex justify-center items-center space-x-1 p-3 bg-lightOrange text-white">
+    <main className="bg-lightWhite font-body grid place-items-center">
+      <div className="flex justify-center items-center space-x-1 shadow-md w-96 p-3 bg-lightOrange text-white sm:px-44 sm:w-auto">
         <BiWorld className="text-xl"/>
         <h1 className="text-exs">my travel journal</h1>
       </div>
-      <div className="flex justify-center items-center flex-col space-y-6 m-4 md:flex-row md:space-x-2 md:space-y-0 ">
+      <div className="flex justify-center items-center shadow-md p-2 max-w-md flex-col space-y-6 m-4">
         {cards}
       </div>
     </main>
