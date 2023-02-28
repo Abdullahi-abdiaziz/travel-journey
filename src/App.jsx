@@ -17,13 +17,15 @@ export default function App() {
   })
 
   return (
-    <main className="bg-lightWhite font-body grid place-items-center">
-      <div className="flex justify-center items-center space-x-1 shadow-md w-96 p-3 bg-lightOrange text-white sm:px-44 sm:w-auto">
-        <BiWorld className="text-xl"/>
-        <h1 className="text-exs">my travel journal</h1>
-      </div>
-      <div className="flex justify-center items-center shadow-md p-2 max-w-md flex-col space-y-6 m-4">
-        {cards}
+    <main className="bg-lightWhite font-body grid place-items-center min-h-screen">
+      <div className="rounded-md shadow-md">
+        <div className="flex justify-center items-center  space-x-1 rounded-t-md w-full p-3 bg-lightOrange text-white">
+          <BiWorld className="text-xl"/>
+          <h1 className="text-exs">my travel journal</h1>
+        </div>
+        <div className="flex justify-center items-center p-2 max-w-md flex-col space-y-6 m-4">
+          {cards}
+        </div>
       </div>
     </main>
   )
